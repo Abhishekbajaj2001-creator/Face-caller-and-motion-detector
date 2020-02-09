@@ -6,7 +6,7 @@ from gtts import gTTS
 language='en'
 first_frame=None
 video = cv2.VideoCapture(0,cv2.CAP_DSHOW)
-face_cascade=cv2.CascadeClassifier("C:\\Users\\abhi\\venv\\Lib\\site-packages\\cv2\\data\\haarcascade_frontalface_default.xml")
+face_cascade=cv2.CascadeClassifier("path.xml")
 recognizer =cv2.face.LBPHFaceRecognizer_create()
 recognizer.read("trainer.yml")
 label={}
