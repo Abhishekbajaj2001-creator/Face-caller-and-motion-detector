@@ -8,7 +8,7 @@ import cv2
 base_dir = os.path.dirname(os.path.abspath(__file__))
 image_dir = os.path.join(base_dir, "faces train")
 
-face_cascade=cv2.CascadeClassifier("C:\\Users\\abhi\\venv\\Lib\\site-packages\\cv2\\data\\haarcascade_frontalface_default.xml")
+face_cascade=cv2.CascadeClassifier("path.xml")
 recognizer =cv2.face.LBPHFaceRecognizer_create()
 current_id = 0
 label_ids ={}
